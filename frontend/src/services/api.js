@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+// Use empty baseURL so all /api/* calls go through Vite's server-side proxy.
+// The proxy is configured in vite.config.js to forward /api → http://backend:8000
+// This works correctly in both Docker and local development.
+const API_BASE_URL = "";
 const TOKEN_KEY = "taxflow_token";
 
 export function getToken() {

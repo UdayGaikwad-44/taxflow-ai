@@ -38,7 +38,8 @@ services:
     container_name: taxflow_frontend
     restart: unless-stopped
     environment:
-      - VITE_API_BASE_URL=http://localhost:8000
+      # Server-side (Vite proxy inside Docker network) → use Docker service name
+      - VITE_API_BASE_URL=http://backend:8000
     ports:
       - "5173:5173"
     depends_on:
