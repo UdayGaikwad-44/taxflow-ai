@@ -1,0 +1,91 @@
+{
+  "txns": {
+    "ok": true,
+    "user_id": "70907969-5a67-4453-b501-72c3c0448285",
+    "items": [
+      {
+        "id": "7a39d65f-5ec0-4eb3-9efe-a2b0ebdb14ed",
+        "date": "2026-11-04",
+        "narration": "Salary Credit",
+        "amount": 50000.0,
+        "direction": "in",
+        "category": "Salary",
+        "deductible": false,
+        "section": null,
+        "financial_year": "FY2025-26",
+        "merchant": null
+      },
+      {
+        "id": "58838aa1-93e4-4b3f-8a57-5d6516f9f5c3",
+        "date": "2026-11-04",
+        "narration": "Salary Credit",
+        "amount": 50000.0,
+        "direction": "in",
+        "category": "Salary",
+        "deductible": false,
+        "section": null,
+        "financial_year": "FY2025-26",
+        "merchant": null
+      },
+      {
+        "id": "a436c1ea-5842-4159-83f1-67607be3d862",
+        "date": "2026-10-04",
+        "narration": "Amazon Shopping",
+        "amount": -500.0,
+        "direction": "out",
+        "category": "Shopping",
+        "deductible": false,
+        "section": null,
+        "financial_year": "FY2025-26",
+        "merchant": null
+      },
+      {
+        "id": "9222d12d-2ef9-427a-adfa-c38b5629e89b",
+        "date": "2026-10-04",
+        "narration": "Amazon Shopping",
+        "amount": -500.0,
+        "direction": "out",
+        "category": "Shopping",
+        "deductible": false,
+        "section": null,
+        "financial_year": "FY2025-26",
+        "merchant": null
+      }
+    ],
+    "count": 4,
+    "currency": "INR"
+  },
+  "receipts": {
+    "ok": true,
+    "items": [
+      {
+        "id": "e78abaa4-f0fd-4235-aa69-7ba3820e15d4",
+        "merchant": "Test Receipt",
+        "amount": 120.0,
+        "date": "2026-04-14",
+        "gstin": null,
+        "gst_amount": 0.0,
+        "category": "Uncategorized",
+        "section_80c": false,
+        "section_80d": false,
+        "financial_year": "FY2025-26",
+        "created_at": "2026-04-14T08:24:12.436851+00:00"
+      },
+      {
+        "id": "c45086e0-2d88-43ab-a136-365ca1bfd5be",
+        "merchant": "Test Receipt",
+        "amount": 120.0,
+        "date": "2026-04-14",
+        "gstin": null,
+        "gst_amount": 0.0,
+        "category": "Uncategorized",
+        "section_80c": false,
+        "section_80d": false,
+        "financial_year": "FY2025-26",
+        "created_at": "2026-04-14T08:24:35.739993+00:00"
+      }
+    ],
+    "count": 2,
+    "currency": "INR"
+  }
+}

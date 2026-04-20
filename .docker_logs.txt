@@ -1,0 +1,50 @@
+﻿taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+taxflow_backend  |     await self.app(scope, receive, _send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/cors.py", line 88, in __call__
+taxflow_backend  |     await self.app(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+taxflow_backend  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+taxflow_backend  |     raise exc
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+taxflow_backend  |     await app(scope, receive, sender)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+taxflow_backend  |     await self.app(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+taxflow_backend  |     await self.middleware_stack(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+taxflow_backend  |     await route.handle(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+taxflow_backend  |     await self.app(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+taxflow_backend  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+taxflow_backend  |     raise exc
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+taxflow_backend  |     await app(scope, receive, sender)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/fastapi/routing.py", line 121, in app
+taxflow_backend  |     await response(scope, receive, send)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/responses.py", line 170, in __call__
+taxflow_backend  |     await self.background()
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/background.py", line 36, in __call__
+taxflow_backend  |     await task()
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/background.py", line 23, in __call__
+taxflow_backend  |     await run_in_threadpool(self.func, *self.args, **self.kwargs)
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+taxflow_backend  |     return await anyio.to_thread.run_sync(func)
+taxflow_backend  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+taxflow_backend  |     return await get_async_backend().run_sync_in_worker_thread(
+taxflow_backend  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+taxflow_backend  |     return await future
+taxflow_backend  |            ^^^^^^^^^^^^
+taxflow_backend  |   File "/usr/local/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+taxflow_backend  |     result = context.run(func, *args)
+taxflow_backend  |              ^^^^^^^^^^^^^^^^^^^^^^^^
+taxflow_backend  |   File "/usr/local/lib/python3.12/asyncio/tasks.py", line 693, in ensure_future
+taxflow_backend  |     loop = events.get_event_loop()
+taxflow_backend  |            ^^^^^^^^^^^^^^^^^^^^^^^
+taxflow_backend  |   File "/usr/local/lib/python3.12/asyncio/events.py", line 702, in get_event_loop
+taxflow_backend  |     raise RuntimeError('There is no current event loop in thread %r.'
+taxflow_backend  | RuntimeError: There is no current event loop in thread 'AnyIO worker thread'.

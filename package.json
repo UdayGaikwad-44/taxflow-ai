@@ -1,0 +1,13 @@
+{
+  "name": "taxflow-ai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "TaxFlow AI — AI-powered tax optimization engine for Indian freelancers",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "lint": "npm run lint --prefix frontend"
+  }
+}
+
